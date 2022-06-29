@@ -1,0 +1,14 @@
+name: telematica-api
+definition: src
+generators:
+  - name: fernapi/fern-java
+    version: 0.0.40
+    generate: true
+    config:
+      packagePrefix: com.telematica
+      mode: client
+  - name: fernapi/fern-typescript
+    version: 0.0.106
+    generate: true
+    config:
+      mode: client
