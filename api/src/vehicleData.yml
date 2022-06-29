@@ -9,74 +9,73 @@ types:
       latitude: double
       longitude: double
 services:
-  VehicleDataService:
-    base-path: /vehicle-data
-    auth: bearer
-    endpoints:
-      getSOC:
-        method: GET
-        path: /soc
-        query-parameters:
-          vehicleId: VehicleId
-        response:
-          ok:
-            type:
-              properties:
-                soc: integer
-      getRange:
-        method: GET
-        path: /range
-        query-parameters:
-          vehicleId: VehicleId
-        response:
-          ok:
-            type:
-              properties:
-                range: integer
-      getRangeSoc:
-        method: GET
-        path: /range-soc
-        query-parameters:
-          vehicleId: VehicleId
-        response:
-          ok:
-            type:
-              properties:
-                range: integer
-                soc: integer
-      getLocation:
-        method: GET
-        path: /location
-        query-parameters:
-          vehicleId: VehicleId
-        response:
-          ok:
-            type:
-              properties:
-                location: ILocation
-      getOdo:
-        method: GET
-        path: /odo
-        query-parameters:
-          vehicleId: VehicleId
-        response:
-          ok:
-            type:
-              properties:
-                odo:
-                  type: number
-                  description: The current odometer reading in kilometers
-      getStaticAttributes:
-        method: GET
-        path: /static-attributes
-        query-parameters:
-          vehicleId: VehicleId
-        response:
-          ok:
-            type:
-              properties:
-                vin: string
-                model: string
-                year: integer
-                make: string
-                registration: string
+  http:
+    VehicleDataService:
+      base-path: /vehicle-data
+      auth: bearer
+      endpoints:
+        getSOC:
+          method: GET
+          path: /soc
+          query-parameters:
+            vehicleId: VehicleId
+          response:
+            ok:
+              type:
+                properties:
+                  soc: integer
+        getRange:
+          method: GET
+          path: /range
+          query-parameters:
+            vehicleId: VehicleId
+          response:
+            ok:
+              type:
+                properties:
+                  range: integer
+        getRangeSoc:
+          method: GET
+          path: /range-soc
+          query-parameters:
+            vehicleId: VehicleId
+          response:
+            ok:
+              type:
+                properties:
+                  range: integer
+                  soc: integer
+        getLocation:
+          method: GET
+          path: /location
+          query-parameters:
+            vehicleId: VehicleId
+          response:
+            ok:
+              type:
+                properties:
+                  location: ILocation
+        getOdo:
+          method: GET
+          path: /odo
+          query-parameters:
+            vehicleId: VehicleId
+          response:
+            ok:
+              type:
+                properties:
+                  odo: integer
+        getStaticAttributes:
+          method: GET
+          path: /static-attributes
+          query-parameters:
+            vehicleId: VehicleId
+          response:
+            ok:
+              type:
+                properties:
+                  vin: string
+                  model: string
+                  year: integer
+                  make: string
+                  registration: string

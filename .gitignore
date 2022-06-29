@@ -1,0 +1,15 @@
+*.class
+.project
+.gradle
+.classpath
+.checkstyle
+.settings
+.node
+build
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
+out/
