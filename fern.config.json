@@ -1,3 +1,4 @@
 {
-  "workspaces": ["**"]
+  "workspaces": ["api", "api-test"],
+  "org": "telematica"
 }

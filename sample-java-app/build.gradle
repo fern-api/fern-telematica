@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://maven-dev.buildwithfern.com"
+    }
+}
+
+dependencies {
+    implementation "com.telematica-fern.fern:telematica-api-client:0.0.5"
+    implementation 'io.github.cdimascio:dotenv-java:2.2.3'
+}
