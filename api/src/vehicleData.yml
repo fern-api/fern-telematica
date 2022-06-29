@@ -6,8 +6,31 @@ ids:
 types:
   ILocation:
     properties:
-      latitude: double
-      longitude: double
+      lat: double
+      lng: double
+  SocResponse:
+    properties:
+      soc: integer
+  RangeResponse:
+    properties:
+      range: integer
+  RangeSocResponse:
+    properties:
+      soc: integer
+      range: integer
+  LocationResponse:
+    properties:
+      location: ILocation
+  OdoResponse:
+    properties:
+      odo: integer
+  StaticAttributes:
+    properties:
+      vin: string
+      model: string
+      year: integer
+      make: string
+      registration: string
 services:
   http:
     VehicleDataService:
@@ -19,63 +42,76 @@ services:
           path: /soc
           query-parameters:
             vehicleId: VehicleId
-          response:
-            ok:
-              type:
-                properties:
-                  soc: integer
+          response: SocResponse
         getRange:
           method: GET
           path: /range
           query-parameters:
             vehicleId: VehicleId
-          response:
-            ok:
-              type:
-                properties:
-                  range: integer
+          response: RangeResponse
         getRangeSoc:
           method: GET
           path: /range-soc
           query-parameters:
             vehicleId: VehicleId
-          response:
-            ok:
-              type:
-                properties:
-                  range: integer
-                  soc: integer
+          response: RangeSocResponse
         getLocation:
           method: GET
           path: /location
           query-parameters:
             vehicleId: VehicleId
-          response:
-            ok:
-              type:
-                properties:
-                  location: ILocation
+          response: LocationResponse
         getOdo:
           method: GET
           path: /odo
           query-parameters:
             vehicleId: VehicleId
-          response:
-            ok:
-              type:
-                properties:
-                  odo: integer
+          response: OdoResponse
         getStaticAttributes:
           method: GET
           path: /static-attributes
           query-parameters:
             vehicleId: VehicleId
-          response:
-            ok:
-              type:
-                properties:
-                  vin: string
-                  model: string
-                  year: integer
-                  make: string
-                  registration: string
+          response: StaticAttributes
+    VehicleDataTestService:
+      # The Vehicle Data Test service should really live on a different base-path
+      # /vehicle-data/test instead of modifying the path for each endpoint.
+      base-path: /vehicle-data
+      auth: bearer
+      endpoints:
+        getSOCTest:
+          method: GET
+          path: /soc/test
+          query-parameters:
+            vehicleId: VehicleId
+          response: SocResponse
+        getRangeTest:
+          method: GET
+          path: /range/test
+          query-parameters:
+            vehicleId: VehicleId
+          response: RangeResponse
+        getRangeSocTest:
+          method: GET
+          path: /range-soc/test
+          query-parameters:
+            vehicleId: VehicleId
+          response: RangeSocResponse
+        getLocationTest:
+          method: GET
+          path: /location/test
+          query-parameters:
+            vehicleId: VehicleId
+          response: LocationResponse
+        getOdoTest:
+          method: GET
+          path: /odo/test
+          query-parameters:
+            vehicleId: VehicleId
+          response: OdoResponse
+        getStaticAttributesTest:
+          method: GET
+          path: /static-attributes/test
+          query-parameters:
+            vehicleId: VehicleId
+          response: StaticAttributes
