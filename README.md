@@ -30,8 +30,8 @@ VehicleDataTestService client =
 
 ```java
 SocResponse res = client.getSOC(
-  AuthHeader.valueof("ey..."),
-  VehicleId.valueof("id..."));
+  AuthHeader.valueOf("ey..."),
+  VehicleId.valueOf("id..."));
 ```
 
 ## Typescript Sample App
@@ -43,7 +43,7 @@ The core logic lives in [app.ts](./sample-js-app/src/app.ts).
 ```typescript
 const client = new VehicleDataService({
   origin: "https://telematica-v2.herokuapp.com/v1",
-  token: "token...",
+  token: "ey...",
 });
 ```
 
