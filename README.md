@@ -18,7 +18,7 @@ By running `fern generate` the SDKs were generated and published to a registry. 
 
 The core logic lives in [MyApp.java](./sample-java-app/src/main/java/com/sample/MyApp.java).
 
-Fern provides the user with an easy way to instantiate a client
+> Fern provides the user with an easy way to instantiate a client
 
 ```java
 VehicleDataTestService client =
@@ -26,7 +26,7 @@ VehicleDataTestService client =
     .getClient("https://telematica-v2.herokuapp.com/v1");
 ```
 
-and type safety when invoking different endpoints.
+> and type safety when invoking different endpoints.
 
 ```java
 SocResponse res = client.getSOC(
@@ -38,7 +38,7 @@ SocResponse res = client.getSOC(
 
 The core logic lives in [app.ts](./sample-js-app/src/app.ts).
 
-Fern provides the user with an easy way to instantiate a client
+> Fern provides the user with an easy way to instantiate a client
 
 ```typescript
 const client = new VehicleDataService({
@@ -47,7 +47,7 @@ const client = new VehicleDataService({
 });
 ```
 
-and type safety when invoking different endpoints.
+> and type safety when invoking different endpoints.
 
 ```typescript
 const socResponse = await client.getSOC({
@@ -55,7 +55,7 @@ const socResponse = await client.getSOC({
 });
 ```
 
-Run the sample app by doing
+_Run the sample app by doing:_
 
 ```bash
 cd sample-js-app
