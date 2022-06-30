@@ -68,6 +68,10 @@ yarn install
 yarn run:app
 ```
 
+## Video
+
+Demo [here](https://www.loom.com/share/28c0540ff7e045f69f804fc900852688)!
+
 ## Features Requests for Fern
 
 - Fern should support labelling certain endpoints as `internal` and publishing internal and external packages of the API.
