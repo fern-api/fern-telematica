@@ -6,9 +6,9 @@ This repository contains
 - [Sample app](./sample-java-app/src/main/java/com/sample/MyApp.java) consuming [generated Java SDK](./sample-java-app/build.gradle#L16)
 - [Sample app](./sample-js-app/src/app.ts) consuming [generated Typescript SDK](./sample-js-app/package.json#L10)
 
-## Fern Telematica SDK Demo
+## Telematica SDK Demo
   
-  [![Fern Telematica SDK Demo - Watch Video](https://cdn.loom.com/sessions/thumbnails/28c0540ff7e045f69f804fc900852688-1656562104637-with-play.gif)](https://www.loom.com/share/28c0540ff7e045f69f804fc900852688)
+  [![Telematica SDK Demo - Watch Video](https://cdn.loom.com/sessions/thumbnails/28c0540ff7e045f69f804fc900852688-1656562104637-with-play.gif)](https://www.loom.com/share/28c0540ff7e045f69f804fc900852688)
 
 
 ## Telematica Fern API Definition
