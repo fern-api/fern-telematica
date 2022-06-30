@@ -55,6 +55,14 @@ const socResponse = await client.getSOC({
 });
 ```
 
+Run the sample app by doing
+
+```bash
+cd sample-js-app
+yarn install
+yarn run:app
+```
+
 ## Notes about existing API
 
 Some things we noticed about the existing API:
