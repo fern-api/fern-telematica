@@ -50,7 +50,7 @@ const client = new VehicleDataService({
 and type safety when invoking different endpoints.
 
 ```typescript
-const socResponse = await client.getSOCTest({
+const socResponse = await client.getSOC({
   vehicleId: VehicleId.valueOf("id..."),
 });
 ```
