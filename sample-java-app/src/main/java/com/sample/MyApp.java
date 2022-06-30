@@ -12,7 +12,7 @@ import io.github.cdimascio.dotenv.Dotenv;
 public class MyApp {
 
      private static final Dotenv DOTENV = Dotenv.configure()
-             .directory(".")
+             .directory("../")
              .load();
 
     public static void main(String... args) {

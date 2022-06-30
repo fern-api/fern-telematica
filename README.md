@@ -34,6 +34,11 @@ SocResponse res = client.getSOC(
   VehicleId.valueOf("id..."));
 ```
 
+**Run the sample app by:**
+
+- opening [./sample-java-app](./sample-java-app/) in Intellij
+- hitting play on [main](./sample-java-app/src/main/java/com/sample/MyApp.java#L18)
+
 ## Typescript Sample App
 
 The core logic lives in [app.ts](./sample-js-app/src/app.ts).
@@ -55,13 +60,17 @@ const socResponse = await client.getSOC({
 });
 ```
 
-_Run the sample app by doing:_
+**Run the sample app by doing:**
 
 ```bash
 cd sample-js-app
 yarn install
 yarn run:app
 ```
+
+## Features Requests for Fern
+
+- Fern should support labelling certain endpoints as `internal` and publishing internal and external packages of the API.
 
 ## Notes about existing API
 
