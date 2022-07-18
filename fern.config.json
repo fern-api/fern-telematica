@@ -1,4 +1,4 @@
 {
   "workspaces": ["api", "api-test"],
-  "org": "telematica"
+  "organization": "telematica"
 }
