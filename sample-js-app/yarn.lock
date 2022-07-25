@@ -14,19 +14,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fern-typescript/service-utils@npm:0.0.100":
-  version: 0.0.100
-  resolution: "@fern-typescript/service-utils@npm:0.0.100"
+"@fern-typescript/service-utils@npm:0.0.124":
+  version: 0.0.124
+  resolution: "@fern-typescript/service-utils@npm:0.0.124"
   dependencies:
     axios: ^0.27.2
-  checksum: 48fb2ab1e53ab993e14a47717f96baa17f58cc5b4e19f2c84b2790cf1fcf326d5f6b20f9d58abfbbedb5d4ac5d06c81e7458947de6086165ec9590aa8704db59
+  checksum: e94d6fb8f1f29b005cd7679ca0c6e231ff4fb65d109176ccd74fc8dfb8573bbbc5118c1bd4e6d822c0011fe1696bc976c216c702c807ba2fa6a9f6426b30846c
   languageName: node
   linkType: hard
 
 "@jridgewell/resolve-uri@npm:^3.0.3":
-  version: 3.0.8
-  resolution: "@jridgewell/resolve-uri@npm:3.0.8"
-  checksum: 28d739f49b4a52a95843b15669dcb2daaab48f0eaef8f457b9aacd0bdebeb60468d0684f73244f613b786e9d871c25abdbe6f55991bba36814cdadc399dbb3a8
+  version: 3.1.0
+  resolution: "@jridgewell/resolve-uri@npm:3.1.0"
+  checksum: b5ceaaf9a110fcb2780d1d8f8d4a0bfd216702f31c988d8042e5f8fbe353c55d9b0f55a1733afdc64806f8e79c485d2464680ac48a0d9fcadb9548ee6b81d267
   languageName: node
   linkType: hard
 
@@ -47,12 +47,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@telematica-fern/telematica-api-client@npm:^0.0.5":
-  version: 0.0.5
-  resolution: "@telematica-fern/telematica-api-client@npm:0.0.5"
+"@telematica-fern/telematica-api-client@npm:^0.0.9":
+  version: 0.0.9
+  resolution: "@telematica-fern/telematica-api-client@npm:0.0.9"
   dependencies:
-    "@fern-typescript/service-utils": 0.0.100
-  checksum: cc25d153487a76b15fbff641d57cc000b3f1e39627f1788ce6ba25bc5776157f38b7fdef5889cff3c212e3eb689c3bfd8e20a8d822c8c2dd813daf9d4828f0e2
+    "@fern-typescript/service-utils": 0.0.124
+    "@types/url-join": 4.0.1
+    url-join: 4.0.1
+  checksum: 7c383321ec7549da5824e2096d671e2de3499d061d80314f23b4727e1ddb628ce44fcdcef1ca937d4a80aeaf368b698957a449dc520ad2cfde9986492abff31f
   languageName: node
   linkType: hard
 
@@ -85,9 +87,16 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:^18.0.0":
-  version: 18.0.0
-  resolution: "@types/node@npm:18.0.0"
-  checksum: aab2b325727a2599f6d25ebe0dedf58c40fb66a51ce4ca9c0226ceb70fcda2d3afccdca29db5942eb48b158ee8585a274a1e3750c718bbd5399d7f41d62dfdcc
+  version: 18.6.1
+  resolution: "@types/node@npm:18.6.1"
+  checksum: 06331f68bc73d93b73977ae19ca87818e004bc7b8e70b0d4f73b0ea5e341a4a1ba6f0e79db8fb75a841af2b8d74552d6b9a8f846b267954689f57effedcf5d77
+  languageName: node
+  linkType: hard
+
+"@types/url-join@npm:4.0.1":
+  version: 4.0.1
+  resolution: "@types/url-join@npm:4.0.1"
+  checksum: 29444b90e165b3970c8ad3fcef1e2de092e72b67e1f3aaff3016eea1697f98a01a28fb4f71f8044e3338a95bd2262327e9299be416efe5297018658760a331b4
   languageName: node
   linkType: hard
 
@@ -99,11 +108,11 @@ __metadata:
   linkType: hard
 
 "acorn@npm:^8.4.1":
-  version: 8.7.1
-  resolution: "acorn@npm:8.7.1"
+  version: 8.8.0
+  resolution: "acorn@npm:8.8.0"
   bin:
     acorn: bin/acorn
-  checksum: aca0aabf98826717920ac2583fdcad0a6fbe4e583fdb6e843af2594e907455aeafe30b1e14f1757cd83ce1776773cf8296ffc3a4acf13f0bd3dfebcf1db6ae80
+  checksum: 7270ca82b242eafe5687a11fea6e088c960af712683756abf0791b68855ea9cace3057bd5e998ffcef50c944810c1e0ca1da526d02b32110e13c722aa959afdc
   languageName: node
   linkType: hard
 
@@ -216,7 +225,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sample-js-app@workspace:."
   dependencies:
-    "@telematica-fern/telematica-api-client": ^0.0.5
+    "@telematica-fern/telematica-api-client": ^0.0.9
     "@types/node": ^18.0.0
     dotenv: ^16.0.1
     ts-node: ^10.8.1
@@ -225,8 +234,8 @@ __metadata:
   linkType: soft
 
 "ts-node@npm:^10.8.1":
-  version: 10.8.1
-  resolution: "ts-node@npm:10.8.1"
+  version: 10.9.1
+  resolution: "ts-node@npm:10.9.1"
   dependencies:
     "@cspotcode/source-map-support": ^0.8.0
     "@tsconfig/node10": ^1.0.7
@@ -258,7 +267,7 @@ __metadata:
     ts-node-script: dist/bin-script.js
     ts-node-transpile-only: dist/bin-transpile.js
     ts-script: dist/bin-script-deprecated.js
-  checksum: 7d1aa7aa3ae1c0459c4922ed0dbfbade442cfe0c25aebaf620cdf1774f112c8d7a9b14934cb6719274917f35b2c503ba87bcaf5e16a0d39ba0f68ce3e7728363
+  checksum: 090adff1302ab20bd3486e6b4799e90f97726ed39e02b39e566f8ab674fd5bd5f727f43615debbfc580d33c6d9d1c6b1b3ce7d8e3cca3e20530a145ffa232c35
   languageName: node
   linkType: hard
 
@@ -279,6 +288,13 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 9096d8f6c16cb80ef3bf96fcbbd055bf1c4a43bd14f3b7be45a9fbe7ada46ec977f604d5feed3263b4f2aa7d4c7477ce5f9cd87de0d6feedec69a983f3a4f93e
+  languageName: node
+  linkType: hard
+
+"url-join@npm:4.0.1":
+  version: 4.0.1
+  resolution: "url-join@npm:4.0.1"
+  checksum: f74e868bf25dbc8be6a8d7237d4c36bb5b6c62c72e594d5ab1347fe91d6af7ccd9eb5d621e30152e4da45c2e9a26bec21390e911ab54a62d4d82e76028374ee5
   languageName: node
   linkType: hard
 

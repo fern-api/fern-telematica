@@ -33,10 +33,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@telematica-fern/telematica-api-client", "npm:0.0.5"],\
-            ["@types/node", "npm:18.0.0"],\
+            ["@telematica-fern/telematica-api-client", "npm:0.0.9"],\
+            ["@types/node", "npm:18.6.1"],\
             ["dotenv", "npm:16.0.1"],\
-            ["ts-node", "virtual:625f3d2bc76dc5d9347465d4417a6b166a07daced5c93cb5bd761e6b8b4b5363e908ff764460d26341e9a4b37d9875eae779a89c3c97cf4c5a737af21ea64812#npm:10.8.1"],\
+            ["ts-node", "virtual:625f3d2bc76dc5d9347465d4417a6b166a07daced5c93cb5bd761e6b8b4b5363e908ff764460d26341e9a4b37d9875eae779a89c3c97cf4c5a737af21ea64812#npm:10.9.1"],\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"]\
           ],\
           "linkType": "SOFT"\
@@ -53,20 +53,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@fern-typescript/service-utils", [\
-        ["npm:0.0.100", {\
-          "packageLocation": "./.yarn/cache/@fern-typescript-service-utils-npm-0.0.100-28753495b9-48fb2ab1e5.zip/node_modules/@fern-typescript/service-utils/",\
+        ["npm:0.0.124", {\
+          "packageLocation": "./.yarn/cache/@fern-typescript-service-utils-npm-0.0.124-eb81d631f3-e94d6fb8f1.zip/node_modules/@fern-typescript/service-utils/",\
           "packageDependencies": [\
-            ["@fern-typescript/service-utils", "npm:0.0.100"],\
+            ["@fern-typescript/service-utils", "npm:0.0.124"],\
             ["axios", "npm:0.27.2"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["@jridgewell/resolve-uri", [\
-        ["npm:3.0.8", {\
-          "packageLocation": "./.yarn/cache/@jridgewell-resolve-uri-npm-3.0.8-94779c6a1d-28d739f49b.zip/node_modules/@jridgewell/resolve-uri/",\
+        ["npm:3.1.0", {\
+          "packageLocation": "./.yarn/cache/@jridgewell-resolve-uri-npm-3.1.0-6ff2351e61-b5ceaaf9a1.zip/node_modules/@jridgewell/resolve-uri/",\
           "packageDependencies": [\
-            ["@jridgewell/resolve-uri", "npm:3.0.8"]\
+            ["@jridgewell/resolve-uri", "npm:3.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -85,18 +85,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@jridgewell-trace-mapping-npm-0.3.9-91625cd7fb-d89597752f.zip/node_modules/@jridgewell/trace-mapping/",\
           "packageDependencies": [\
             ["@jridgewell/trace-mapping", "npm:0.3.9"],\
-            ["@jridgewell/resolve-uri", "npm:3.0.8"],\
+            ["@jridgewell/resolve-uri", "npm:3.1.0"],\
             ["@jridgewell/sourcemap-codec", "npm:1.4.14"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["@telematica-fern/telematica-api-client", [\
-        ["npm:0.0.5", {\
-          "packageLocation": "./.yarn/cache/@telematica-fern-telematica-api-client-npm-0.0.5-e33f3559da-cc25d15348.zip/node_modules/@telematica-fern/telematica-api-client/",\
+        ["npm:0.0.9", {\
+          "packageLocation": "./.yarn/cache/@telematica-fern-telematica-api-client-npm-0.0.9-a507c5cdaa-7c383321ec.zip/node_modules/@telematica-fern/telematica-api-client/",\
           "packageDependencies": [\
-            ["@telematica-fern/telematica-api-client", "npm:0.0.5"],\
-            ["@fern-typescript/service-utils", "npm:0.0.100"]\
+            ["@telematica-fern/telematica-api-client", "npm:0.0.9"],\
+            ["@fern-typescript/service-utils", "npm:0.0.124"],\
+            ["@types/url-join", "npm:4.0.1"],\
+            ["url-join", "npm:4.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -138,19 +140,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/node", [\
-        ["npm:18.0.0", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-18.0.0-c8497066c5-aab2b32572.zip/node_modules/@types/node/",\
+        ["npm:18.6.1", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-18.6.1-9231d14b7c-06331f68bc.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:18.0.0"]\
+            ["@types/node", "npm:18.6.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/url-join", [\
+        ["npm:4.0.1", {\
+          "packageLocation": "./.yarn/cache/@types-url-join-npm-4.0.1-996120d4f1-29444b90e1.zip/node_modules/@types/url-join/",\
+          "packageDependencies": [\
+            ["@types/url-join", "npm:4.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["acorn", [\
-        ["npm:8.7.1", {\
-          "packageLocation": "./.yarn/cache/acorn-npm-8.7.1-7c7a019990-aca0aabf98.zip/node_modules/acorn/",\
+        ["npm:8.8.0", {\
+          "packageLocation": "./.yarn/cache/acorn-npm-8.8.0-9ef399ab45-7270ca82b2.zip/node_modules/acorn/",\
           "packageDependencies": [\
-            ["acorn", "npm:8.7.1"]\
+            ["acorn", "npm:8.8.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -306,27 +317,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["sample-js-app", "workspace:."],\
-            ["@telematica-fern/telematica-api-client", "npm:0.0.5"],\
-            ["@types/node", "npm:18.0.0"],\
+            ["@telematica-fern/telematica-api-client", "npm:0.0.9"],\
+            ["@types/node", "npm:18.6.1"],\
             ["dotenv", "npm:16.0.1"],\
-            ["ts-node", "virtual:625f3d2bc76dc5d9347465d4417a6b166a07daced5c93cb5bd761e6b8b4b5363e908ff764460d26341e9a4b37d9875eae779a89c3c97cf4c5a737af21ea64812#npm:10.8.1"],\
+            ["ts-node", "virtual:625f3d2bc76dc5d9347465d4417a6b166a07daced5c93cb5bd761e6b8b4b5363e908ff764460d26341e9a4b37d9875eae779a89c3c97cf4c5a737af21ea64812#npm:10.9.1"],\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"]\
           ],\
           "linkType": "SOFT"\
         }]\
       ]],\
       ["ts-node", [\
-        ["npm:10.8.1", {\
-          "packageLocation": "./.yarn/cache/ts-node-npm-10.8.1-24280b0982-7d1aa7aa3a.zip/node_modules/ts-node/",\
+        ["npm:10.9.1", {\
+          "packageLocation": "./.yarn/cache/ts-node-npm-10.9.1-6c268be7f4-090adff130.zip/node_modules/ts-node/",\
           "packageDependencies": [\
-            ["ts-node", "npm:10.8.1"]\
+            ["ts-node", "npm:10.9.1"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:625f3d2bc76dc5d9347465d4417a6b166a07daced5c93cb5bd761e6b8b4b5363e908ff764460d26341e9a4b37d9875eae779a89c3c97cf4c5a737af21ea64812#npm:10.8.1", {\
-          "packageLocation": "./.yarn/__virtual__/ts-node-virtual-0042ec1205/0/cache/ts-node-npm-10.8.1-24280b0982-7d1aa7aa3a.zip/node_modules/ts-node/",\
+        ["virtual:625f3d2bc76dc5d9347465d4417a6b166a07daced5c93cb5bd761e6b8b4b5363e908ff764460d26341e9a4b37d9875eae779a89c3c97cf4c5a737af21ea64812#npm:10.9.1", {\
+          "packageLocation": "./.yarn/__virtual__/ts-node-virtual-6b9dd1d758/0/cache/ts-node-npm-10.9.1-6c268be7f4-090adff130.zip/node_modules/ts-node/",\
           "packageDependencies": [\
-            ["ts-node", "virtual:625f3d2bc76dc5d9347465d4417a6b166a07daced5c93cb5bd761e6b8b4b5363e908ff764460d26341e9a4b37d9875eae779a89c3c97cf4c5a737af21ea64812#npm:10.8.1"],\
+            ["ts-node", "virtual:625f3d2bc76dc5d9347465d4417a6b166a07daced5c93cb5bd761e6b8b4b5363e908ff764460d26341e9a4b37d9875eae779a89c3c97cf4c5a737af21ea64812#npm:10.9.1"],\
             ["@cspotcode/source-map-support", "npm:0.8.1"],\
             ["@swc/core", null],\
             ["@swc/wasm", null],\
@@ -334,11 +345,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.11"],\
             ["@tsconfig/node14", "npm:1.0.3"],\
             ["@tsconfig/node16", "npm:1.0.3"],\
-            ["@types/node", "npm:18.0.0"],\
+            ["@types/node", "npm:18.6.1"],\
             ["@types/swc__core", null],\
             ["@types/swc__wasm", null],\
             ["@types/typescript", null],\
-            ["acorn", "npm:8.7.1"],\
+            ["acorn", "npm:8.8.0"],\
             ["acorn-walk", "npm:8.2.0"],\
             ["arg", "npm:4.1.3"],\
             ["create-require", "npm:1.1.1"],\
@@ -365,6 +376,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/typescript-patch-e8b9857d0c-9096d8f6c1.zip/node_modules/typescript/",\
           "packageDependencies": [\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["url-join", [\
+        ["npm:4.0.1", {\
+          "packageLocation": "./.yarn/cache/url-join-npm-4.0.1-e1f4415722-f74e868bf2.zip/node_modules/url-join/",\
+          "packageDependencies": [\
+            ["url-join", "npm:4.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
